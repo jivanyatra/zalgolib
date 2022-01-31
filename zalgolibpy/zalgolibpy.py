@@ -27,7 +27,7 @@ def enzalgofy(text="I summon Zalgo",intensity=50):
         zalgo += char
         marks = [*uplist, *midlist, *downlist]
         for mark in marks:
-            zalgo += mark
+            zalgo += mark.strip()
     return zalgo
 
 def dezalgofy(text):
