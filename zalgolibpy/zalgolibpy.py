@@ -34,7 +34,11 @@ def dezalgofy(text=""):
     '''Takes text and removes Zalgo diacritics from it then returns the cleaned
     up output
     '''
-    marks = [*DOWN_MARKS, *UP_MARKS, *MID_MARKS]
-    for mark in marks:
-        nonzalgo = text.replace(mark.strip(), "")
-    return nonzalgo
+    
+    # this doesn't work because of the way unicode accents combine with joining characters
+    # marks = [*DOWN_MARKS, *UP_MARKS, *MID_MARKS]
+    # for mark in marks:
+    #     text = text.replace(mark, "")
+    # return text
+    
+    return text.encode("ascii", "ignore").decode("utf-8")
