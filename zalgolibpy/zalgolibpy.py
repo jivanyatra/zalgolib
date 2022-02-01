@@ -30,12 +30,11 @@ def enzalgofy(text="I summon Zalgo",intensity=50):
             zalgo += mark.strip()
     return zalgo
 
-def dezalgofy(text):
+def dezalgofy(text=""):
     '''Takes text and removes Zalgo diacritics from it then returns the cleaned
     up output
     '''
-    nonzalgo = text
     marks = [*DOWN_MARKS, *UP_MARKS, *MID_MARKS]
     for mark in marks:
-        nonzalgo.replace(mark, "")
+        nonzalgo = text.replace(mark.strip(), "")
     return nonzalgo
