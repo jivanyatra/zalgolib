@@ -1,4 +1,4 @@
-# ZalgoLibPy - A Full Zalgo Experience
+# ZalgoLib.py - A Full Zalgo Experience
 
 ### "Full"
 
