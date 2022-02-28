@@ -1,4 +1,4 @@
-from diacritics import DOWN_MARKS, UP_MARKS, MID_MARKS, DOWN_LEN, UP_LEN, MID_LEN
+from .diacritics import DOWN_MARKS, UP_MARKS, MID_MARKS, DOWN_LEN, UP_LEN, MID_LEN
 from random import choices
 
 # len(DOWN_MARKS) is 40
