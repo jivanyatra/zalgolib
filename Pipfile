@@ -9,3 +9,5 @@ python_version = "3.7"
 [packages]
 
 [dev-packages]
+build = "*"
+twine = "*"
