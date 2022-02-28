@@ -17,9 +17,11 @@ I want to focus on functionality and periodically check in and update as needed.
 ##### zalgolib.py
 
 * `enzalgofy` : takes two keyword arguments (`text` and `intensity`).
-  * `text` expects a string as input - you can feed it from whatever source you want.
-  * `intensity` expects an int from 0-100 (inclusive) and represents a rough percentage of the marks to include on each character. **The default is 50.** This scales up quite quickly, with values less than 20 being fairly light and values over 75 being very heavy. The differences lower or higher (respectively) from those points have some diminishing returns on legibility.
-    * In the future, I'd like to adjust this to provide some more variability from character to character within a block of text.
+  * `text` expects a `string` as input - you can feed it from whatever source you want.
+  * `intensity` expects an `int` from `0-100` (inclusive) and represents a rough percentage of the marks to include on each character. **The default is 50.** This scales up quite quickly, with values less than 20 being fairly light and values over 75 being very heavy. The differences lower or higher (respectively) from those points have some diminishing returns on legibility.
+    * In the future, I'd like to adjust this to provide some more variability from character to character within a block of text. I'd like to make this available as a parameter as well.
+
+* `dezalgofy` : takes a zalgo `string`, converts it to ascii, and then back to utf-8. It ignores all errors. This isn't great overall, since if you're adding text that's accented already, it will return a stripped version of it. To be fair, that problem seems sufficiently complex to solve, and probably benefits from a language specifier and dictionaries, or some ML magic. As it is, it's fairly lean and does the job.
 
 ##### diacritics.py
 
@@ -39,6 +41,16 @@ This is a work-in-progress. There are many more overlapping marks to be found in
 * Markers from other languages such as Arabic, Hebrew, Hindi, Bengali, Oriya, Malayalam, Tamil, etc.
 
 These python lists can be added to in your script, but you'll have to recalculate the lengths (since length calculation from the module is done at import). Conversely, you can just append the characters to `diacritics.py` as you see fit, either by adding them to the list or adding them as new lists.
+
+### To-Do
+
+* add additional readily-available diacritics
+* add variability to number of diacritics added per character
+  * based on text input
+  * make parameter available for adjusting
+  * perhaps add option for random variability?
+* add scaffolding to publish to PyPI
+* publish to PyPI
 
 ### License
 
