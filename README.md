@@ -49,8 +49,8 @@ These python lists can be added to in your script, but you'll have to recalculat
   * based on text input
   * make parameter available for adjusting
   * perhaps add option for random variability?
-* add scaffolding to publish to PyPI
-* publish to PyPI
+* ~~add scaffolding to publish to PyPI~~
+* ~~publish to PyPI~~
 
 ### License
 

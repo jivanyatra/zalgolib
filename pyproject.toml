@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zalgolib"
+authors = [
+    {name = "Yatri Trivedi", email = "jivanyatra@gmail.com"},
+]
+description = "A Python library for a _FULL_ Zalgo experience"
+requires-python = ">=3.7"
+keywords = ["downloader", "adult"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+	"Topic :: Text Processing :: General",
+    "Natural Language :: English",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+dependencies = []
+dynamic = ["readme", "version"]
+license = {file = "LICENSE"}
+
+[tool.setuptools]
+packages = ["zalgolib"]
+package-dir = {"" = "src"}
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"], content-type = "text/markdown"}
+version = {attr = "zalgolib.__version__"}
+
+[project.urls]
+Homepage = "https://github.com/jivanyatra/zalgolib/"
+Issues = "https://github.com/jivanyatra/zalgolib/issues"
