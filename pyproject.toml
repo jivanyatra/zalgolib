@@ -9,7 +9,7 @@ authors = [
 ]
 description = "A Python library for a _FULL_ Zalgo experience"
 requires-python = ">=3.7"
-keywords = ["downloader", "adult"]
+keywords = ["diacritics", "horror", "language encoding", "obfuscation", "text processing", "zalgo"]
 classifiers = [
     "Programming Language :: Python :: 3",
 	"Topic :: Text Processing :: General",
