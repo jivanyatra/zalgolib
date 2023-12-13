@@ -16,7 +16,11 @@ I created this as a basic text processing library. It's perfect for running as a
 
 ##### dependencies
 
-`random` (standard library) is the only dependency required. I've writting this library in python 3.7, but I expect it should work fairly well with a wider set of python versions. The key is my use of `random.choices()` - if this isn't importable, you'll need to adjust and tweak. I use it to select from the lists of diacritics _with replacement_. 
+`random` (standard library) is the only dependency required. I've writing this library in **python 3.7**, but I expect it should work fairly well with a wider set of python versions. The key is my use of `random.choices()` - if this isn't importable, you'll need to adjust and tweak. I use it to select from the lists of diacritics _with replacement_. 
+
+#### installation
+
+`pip install zalgolib` should be sufficient to install, as this package has been [released on PyPI](https://pypi.org/project/zalgolib/). As usual, use a virtual environment if at all possible. I should probably come up with a CLI app that is installable on Linux, and maybe have it as an API service in a docker container...
 
 ##### zalgolib.py
 
