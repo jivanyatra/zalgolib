@@ -10,6 +10,10 @@ I want to focus on functionality and periodically check in and update as needed.
 
 ### Documentation
 
+#### purpose
+
+I created this as a basic text processing library. It's perfect for running as a default service for an API, cloud FaaS, CLI core process, etc. It acts as drop-in functionality for learning new frameworks. It's also useful in a series of horror short stories I wrote that was presented as a hosted API at one point in time. You had to make API calls to get chunks of the story, which gradually become more and more corrupt, and then you unlocked access to the `dezalgofy` function to be able to read later sections, including the real ending.
+
 ##### dependencies
 
 `random` (standard library) is the only dependency required. I've writting this library in python 3.7, but I expect it should work fairly well with a wider set of python versions. The key is my use of `random.choices()` - if this isn't importable, you'll need to adjust and tweak. I use it to select from the lists of diacritics _with replacement_. 
